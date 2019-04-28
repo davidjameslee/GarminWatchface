@@ -1,0 +1,3 @@
+<fonts>
+	<font id="customFont" filename="customfont.fnt" filter="0123456789:" antialias="true" />
+</fonts>
