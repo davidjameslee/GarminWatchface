@@ -3,11 +3,23 @@ using Toybox.Graphics;
 using Toybox.System;
 using Toybox.Lang;
 using Toybox.Application;
+using Toybox.ActivityMonitor;
 
 class WatchTestView extends WatchUi.WatchFace {
 
+    var color;
+
     function initialize() {
         WatchFace.initialize();
+        
+        var themeNumber = Application.getApp().getProperty("Theme");
+        if (themeNumber == 0) {
+            // Dark theme
+            color = Graphics.COLOR_WHITE;
+        } else {
+            // Light theme
+            color = Graphics.COLOR_BLACK;
+        }
     }
 
     // Load your resources here
@@ -42,8 +54,14 @@ class WatchTestView extends WatchUi.WatchFace {
 
         // Update the view
         var view = View.findDrawableById("TimeLabel");
-        view.setColor(Application.getApp().getProperty("ForegroundColor"));
+        view.setColor(color);
         view.setText(timeString);
+        
+        var stepsLabel = View.findDrawableById("StepLabel");
+        stepsLabel.setColor(color);
+        var stepCount = ActivityMonitor.getInfo().steps;
+        stepsLabel.setText(stepCount.format("%d"));
+        
 
         // Call the parent onUpdate function to redraw the layout
         View.onUpdate(dc);

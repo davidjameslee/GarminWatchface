@@ -12,7 +12,7 @@ Quick notes, since I often forget.
     * ~~Background~~
     * ~~Time~~
     * Date
-    * Step count
+    * ~~Step count~~
     * Disconnected bluetooth
     * Battery indicator (Percent or low indicator)
 * ~~Allow dark/light mode though <settings>~~
@@ -27,3 +27,5 @@ Quick notes, since I often forget.
 The font used for the numbers is "Tex Gyre Adventor"
 
 Watch background and theme will be inspired by the Angel Beats logo. I still really like the simple design, plus I may actually have heart stats.
+
+Walking Icon is from Google Material Design.

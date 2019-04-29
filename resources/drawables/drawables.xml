@@ -1,4 +1,6 @@
 <drawables>
     <bitmap id="LauncherIcon" filename="launcher_icon.png" />
     <bitmap id="BackgroundImage" filename="BackgroundImage.png" />
+    <bitmap id="StepIconWhite" filename="Walk_White.png" />
+    <bitmap id="StepIconBlack" filename="Walk_Black.png" />
 </drawables>
