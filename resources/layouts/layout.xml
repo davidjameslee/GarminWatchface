@@ -1,8 +1,8 @@
 <layout id="WatchFace">
     <drawable class="Background" />
     <label id="TimeLabel" x="88" y="88" font="@Fonts.customFont" justification="Graphics.TEXT_JUSTIFY_LEFT"/>
-    <label id="DateLabel" />
+    <label id="DateLabel" x="100" y="165" justification="Graphics.TEXT_JUSTIFY_LEFT" />
     <label id="StepLabel" x="center" y="40" justification="Graphics.TEXT_JUSTIFY_CENTER" />
-    <label id="BatteryIndicator" />
-    <label id="BluetoothIndicator" />
+    <label id="BatteryIndicator" /><!-- Placeholder -->
+    <label id="BluetoothIndicator" /><!-- Placeholder -->
 </layout>

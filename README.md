@@ -11,11 +11,12 @@ Quick notes, since I often forget.
 * Determine what to display and the general layout
     * ~~Background~~
     * ~~Time~~
-    * Date
+    * ~~Date~~
     * ~~Step count~~
     * Disconnected bluetooth
     * Battery indicator (Percent or low indicator)
 * ~~Allow dark/light mode though <settings>~~
+* Create setting for customizable date formats
 * Setup animations?
     * Maybe a onExitSleep
 * Consider a third color scheme/finalize colors

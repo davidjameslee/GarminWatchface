@@ -6,9 +6,5 @@
             <listEntry value="1">@Strings.LightTheme</listEntry>
         </settingConfig>
     </setting>
-
-    <setting propertyKey="@Properties.UseMilitaryFormat" title="@Strings.MilitaryFormatTitle">
-        <settingConfig type="boolean" />
-    </setting>
-
+    
 </settings>
