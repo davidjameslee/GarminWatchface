@@ -6,8 +6,6 @@ using Toybox.Application;
 
 class WatchTestView extends WatchUi.WatchFace {
 
-	var customFont = null;
-
     function initialize() {
         WatchFace.initialize();
     }
@@ -15,7 +13,6 @@ class WatchTestView extends WatchUi.WatchFace {
     // Load your resources here
     function onLayout(dc) {
         setLayout(Rez.Layouts.WatchFace(dc));
-//        customFont = Ui.loadResource(Rez.Fonts.customFont);
     }
 
     // Called when this View is brought to the foreground. Restore
@@ -41,6 +38,7 @@ class WatchTestView extends WatchUi.WatchFace {
             }
         }
         var timeString = Lang.format(timeFormat, [hours, clockTime.min.format("%02d")]);
+        
 
         // Update the view
         var view = View.findDrawableById("TimeLabel");

@@ -5,21 +5,20 @@ First Attempt at a watchface for the Garmin Vivoactive 3. This is mostly me expe
 
 Quick notes, since I often forget.
 
-* Setup a background
-    * Image and background colors
-    * Plan for possible Dark and Light color schemes
+* ~~Setup a background~~
+    * ~~Image and background colors~~
+    * ~~Plan for possible Dark and Light color schemes~~
 * Determine what to display and the general layout
-    * Background
-    * Time
+    * ~~Background~~
+    * ~~Time~~
     * Date
     * Step count
     * Disconnected bluetooth
     * Battery indicator (Percent or low indicator)
-* Determine sizing and spacing
-    * Correct the size of the font?
-* Allow dark/light mode though <settings>
+* ~~Allow dark/light mode though <settings>~~
 * Setup animations?
     * Maybe a onExitSleep
+* Consider a third color scheme/finalize colors
 * Optimizations
 * Consider testing? (Depending on how complex this gets)
 
