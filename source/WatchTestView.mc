@@ -9,6 +9,8 @@ using Toybox.Time;
 class WatchTestView extends WatchUi.WatchFace {
 
     var color;
+    var batteryIcon;
+    var bluetoothIcon;
 
     function initialize() {
         WatchFace.initialize();
@@ -17,9 +19,13 @@ class WatchTestView extends WatchUi.WatchFace {
         if (themeNumber == 0) {
             // Dark theme
             color = Graphics.COLOR_WHITE;
+            batteryIcon = WatchUi.loadResource(Rez.Drawables.LowBatteryIconWhite);
+            bluetoothIcon = WatchUi.loadResource(Rez.Drawables.BluetoothIconWhite);
         } else {
             // Light theme
             color = Graphics.COLOR_BLACK;
+            batteryIcon = WatchUi.loadResource(Rez.Drawables.LowBatteryIconBlack);
+            bluetoothIcon = WatchUi.loadResource(Rez.Drawables.BluetoothIconBlack);
         }
     }
 
@@ -64,9 +70,15 @@ class WatchTestView extends WatchUi.WatchFace {
         dateLabel.setColor(color);
         dateLabel.setText(dateString);
         
-
         // Call the parent onUpdate function to redraw the layout
         View.onUpdate(dc);
+        
+        // Draw additional icons
+        if (System.getSystemStats().battery < 30) {
+            dc.drawBitmap(58, 100, batteryIcon);
+        } else if (!System.getDeviceSettings().phoneConnected) {
+            dc.drawBitmap(58, 100, bluetoothIcon);
+        }
     }
 
     // Called when this View is removed from the screen. Save the

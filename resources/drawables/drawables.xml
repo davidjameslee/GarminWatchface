@@ -1,6 +1,13 @@
 <drawables>
     <bitmap id="LauncherIcon" filename="launcher_icon.png" />
     <bitmap id="BackgroundImage" filename="BackgroundImage.png" />
+    
     <bitmap id="StepIconWhite" filename="Walk_White.png" />
     <bitmap id="StepIconBlack" filename="Walk_Black.png" />
+    
+    <bitmap id="LowBatteryIconWhite" filename="Battery_White.png" />
+    <bitmap id="LowBatteryIconBlack" filename="Battery_Black.png" />
+    
+    <bitmap id="BluetoothIconWhite" filename="BluetoothDisconnected_White.png" />
+    <bitmap id="BluetoothIconBlack" filename="BluetoothDisconnected_Black.png" />
 </drawables>
