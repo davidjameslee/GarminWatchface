@@ -1,7 +1,7 @@
 # GarminWatchface
 First Attempt at a watchface for the Garmin Vivoactive 3, using the recommended Eclipse environment.. This is mostly me experimenting, so I don't expect that I'll try and support other devices/languages. This is mostly since I don't own or speak them...
 
-![Image of Watchface](https://github.com/davidjameslee/GarminWatchface/blob/master/Watchface.png)
+![Image of Watchface](https://raw.githubusercontent.com/davidjameslee/GarminWatchface/master/Watchface.png)
 
 ## Todos
 
