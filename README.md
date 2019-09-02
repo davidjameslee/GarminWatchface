@@ -1,32 +1,22 @@
 # GarminWatchface
-First Attempt at a watchface for the Garmin Vivoactive 3. This is mostly me experimenting, so I don't expect that I'll try and support other devices/languages.
+First Attempt at a watchface for the Garmin Vivoactive 3, using the recommended Eclipse environment.. This is mostly me experimenting, so I don't expect that I'll try and support other devices/languages. This is mostly since I don't own or speak them...
+
+![Image of Watchface](https://github.com/davidjameslee/GarminWatchface/blob/master/Watchface.png)
 
 ## Todos
 
-Quick notes, since I often forget.
-
-* ~~Setup a background~~
-    * ~~Image and background colors~~
-    * ~~Plan for possible Dark and Light color schemes~~
-* Determine what to display and the general layout
-    * ~~Background~~
-    * ~~Time~~
-    * ~~Date~~
-    * ~~Step count~~
-    * Disconnected bluetooth
-    * Battery indicator (Percent or low indicator)
-* ~~Allow dark/light mode though <settings>~~
-* Create setting for customizable date formats
+Things I'll look into if I get the time:
+* Improve light theme/add options for a dark blue or something
+* Add Tests
+* Change Midnight to 12 instead of 0 hours
+* Add app option for different date formats
 * Setup animations?
-    * Maybe a onExitSleep
-* Consider a third color scheme/finalize colors
-* Optimizations
-* Consider testing? (Depending on how complex this gets)
+* Consider adding tests (Depending if this gets complex)
 
 ## Notes
 
 The font used for the numbers is "Tex Gyre Adventor"
 
-Watch background and theme will be inspired by the Angel Beats logo. I still really like the simple design, plus I may actually have heart stats.
+Watch background and theme will be inspired by the Angel Beats logo. I still really like the simple design.
 
-Walking Icon is from Google Material Design.
+Icons are from Google Material Design. (Walking Person, Battery and Bluetooth)
