@@ -5,6 +5,7 @@ First Attempt at a watchface for the Garmin Vivoactive 3, using the recommended 
 
 ## Todos
 
+<<<<<<< HEAD
 Things I'll look into if I get the time:
 * Improve light theme/add options for a dark blue or something
 * Add Tests

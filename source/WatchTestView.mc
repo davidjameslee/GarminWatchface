@@ -19,12 +19,12 @@ class WatchTestView extends WatchUi.WatchFace {
         if (themeNumber == 0) {
             // Dark theme
             color = Graphics.COLOR_WHITE;
-            batteryIcon = WatchUi.loadResource(Rez.Drawables.LowBatteryIconWhite);
+            batteryIcon = WatchUi.loadResource(Rez.Drawables.BatteryIconWhite);
             bluetoothIcon = WatchUi.loadResource(Rez.Drawables.BluetoothIconWhite);
         } else {
             // Light theme
             color = Graphics.COLOR_BLACK;
-            batteryIcon = WatchUi.loadResource(Rez.Drawables.LowBatteryIconBlack);
+            batteryIcon = WatchUi.loadResource(Rez.Drawables.BatteryIconBlack);
             bluetoothIcon = WatchUi.loadResource(Rez.Drawables.BluetoothIconBlack);
         }
     }
@@ -89,6 +89,8 @@ class WatchTestView extends WatchUi.WatchFace {
 
     // The user has just looked at their watch. Timers and animations may be started here.
     function onExitSleep() {
+        WatchUi.animate(View.findDrawableById("animTest"), :locX, WatchUi.ANIM_TYPE_LINEAR, -25, 240, 3, null);
+        
     }
 
     // Terminate any active timers and prepare for slow updates.
